@@ -52,4 +52,19 @@ lspconfig.lua_ls.setup({
 	},
 })
 
+-- PHP & Blade LSP (intelephense)
+lspconfig.intelephense.setup({
+	on_attach = M.on_attach,
+	capabilities = M.capabilities,
+	settings = {
+			intelephense = {
+					files = {
+							associations = { "*.php", "*.blade.php" },  -- PHP and Blade files
+					},
+			},
+	},
+	filetypes = { "php", "blade" },  -- Make sure Blade files are included
+	root_dir = lspconfig.util.root_pattern("composer.json", ".git"),  -- Use Laravel project structure
+})
+
 return M

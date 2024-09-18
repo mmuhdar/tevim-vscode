@@ -35,3 +35,6 @@ vim.api.nvim_set_keymap('n', '<C-f>', ':Telescope current_buffer_fuzzy_find<CR>'
 
 
 
+
+
+

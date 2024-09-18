@@ -4,6 +4,6 @@ return {
 		use_languagetree = true,
 	},
 	indent = { enable = true },
-	ensure_installed = { "lua", "vim", "vimdoc" },
+	ensure_installed = { "lua", "vim", "vimdoc", "javascript", "typescript" },
 	auto_install = true,
 }
